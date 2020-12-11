@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url("Desktop\ -\ 1.jpg") no-repeat center center/cover;
+  color: rgb(238, 235, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Andika", sans-serif;
+  height: 100vh;
+}
+.info {
+  display: flex;
+  background-color: #3c206a;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  width: 35%;
+  height: 20%;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 2px 4px 10px #131313;
+}
+
+/* .info-name {
+  margin-right: 50px;
+} */
+
+button {
+  height: 40px;
+  outline: none;
+  outline-style: none;
+  border-style: none;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+.butn {
+  width: 20%;
+  margin-top: 30px;
+  background: linear-gradient(to right, #b70e3c, #a1041d);
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.but {
+  outline: none;
+  width: 20%;
+  border-radius: 10px;
+  outline-style: none;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+.but:hover {
+  background: rgb(238, 235, 235);
+  color: #390f7c;
+  font-weight: 120px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  /* padding: 20px; */
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* margin: 5px; */
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button {
+  position: fixed;
+  top: 0;
+  left: 15%;
+}
+
+@media (max-width: 992px) {
+  .info {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    width: 70%;
+  }
+  .butn {
+    width: 30%;
+  }
+}
